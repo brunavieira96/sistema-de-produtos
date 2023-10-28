@@ -17,6 +17,14 @@ export class ProdutosComponent {
 
   ngOnInit() {
 
-    
+    this.produtosService.exibeProdutos().subscribe(
+      (produtos) => {
+        this.produtos = produtos;
+      },
+      (error) => {
+        console.log(error);
+
+      }
+    )     
   }
 }

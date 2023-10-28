@@ -10,3 +10,12 @@
       <th scope="col">Quantidade</th>
     </tr>
   </thead>
+
+<tbody>
+  <tr *ngFor="let produto of produtos">
+    <th scope="row">{{ produto.id }}</th>
+    <td>{{ produto.nomeProduto }}</td>
+    <td>{{ produto.preco }}</td>
+    <td>{{ produto.quantidade }}</td>
+    <td class="text-center">
+</td>
