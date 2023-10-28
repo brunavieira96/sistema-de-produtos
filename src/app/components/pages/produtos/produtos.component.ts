@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Produto } from '../../interfaces/produto';
+import { ProdutosService } from 'src/app/services/produtos.service';
 
 @Component({
   selector: 'app-produtos',
@@ -7,5 +9,14 @@ import { Component } from '@angular/core';
 })
 export class ProdutosComponent {
   
+  produtos: Produto[] = [];
 
+  constructor (private produtosService : ProdutosService) {
+
+  }
+
+  ngOnInit() {
+
+    
+  }
 }
