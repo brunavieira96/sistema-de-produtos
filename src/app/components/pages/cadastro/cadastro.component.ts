@@ -17,10 +17,10 @@ export class CadastroComponent {
   }
 
     produtoForm = new FormGroup({
-    nomeProduto: new FormControl('', Validators.required),
+    nome: new FormControl('', Validators.required),
+    codigoBarras: new FormControl('', Validators.required),
     preco: new FormControl(),
-    categoria: new FormControl('', Validators.required),
-    quantidade: new FormControl()
+
   })
 
   enviarProduto() {

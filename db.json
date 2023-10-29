@@ -2,101 +2,27 @@
   "produtos": [
     {
       "id": 1,
-      "nomeProduto": "Notebook Acer",
-      "preco": 2000,
-      "categoria": "Computadores",
-      "quantidade": 600
+      "nome": "Notebook Acer",
+      "codigoBarras": "5TY789",
+      "preco": 3600
     },
     {
-      "nomeProduto": "Geladeira",
-      "preco": 8000,
-      "categoria": "Eletrodomésticos",
-      "quantidade": 10,
+      "nome": "Nintendo Switch",
+      "codigoBarras": "A786HUI",
+      "preco": 2300,
       "id": 2
     },
     {
-      "nomeProduto": "Fogão Brastemp",
-      "preco": 2000,
-      "categoria": "Eletrodomésticos",
-      "quantidade": 40,
+      "nome": "Samsung Galaxy FE",
+      "codigoBarras": "R5T789",
+      "preco": 2500,
       "id": 3
     },
     {
-      "nomeProduto": "Fones de Ouvido JBL",
-      "preco": 200,
-      "categoria": "Fones de Ouvido",
-      "quantidade": 87,
-      "id": 4
-    },
-    {
-      "nomeProduto": "Monitor Gamer Samsung",
-      "preco": 800,
-      "categoria": "Monitores",
-      "quantidade": 5,
-      "id": 5
-    },
-    {
-      "nomeProduto": "Geladeira Brastemp",
-      "preco": 2000,
-      "categoria": "Eletrodomésticos",
-      "quantidade": 7,
-      "id": 6
-    },
-    {
-      "nomeProduto": "Airfryer Arno",
-      "preco": 350,
-      "categoria": "Eletrodomésticos",
-      "quantidade": 2,
-      "id": 7
-    },
-    {
-      "nomeProduto": "Teclado Dell",
-      "preco": 80,
-      "categoria": "Periféricos",
-      "quantidade": 38,
-      "id": 8
-    },
-    {
-      "nomeProduto": "Fones de Ouvido Samsung",
-      "preco": 300,
-      "categoria": "Fones de Ouvido",
-      "quantidade": 6,
-      "id": 9
-    },
-    {
-      "nomeProduto": "Desktop Lenovo",
+      "nome": "Playstation 5",
+      "codigoBarras": "H78K095",
       "preco": 4000,
-      "categoria": "Computadores",
-      "quantidade": 3,
-      "id": 10
-    },
-    {
-      "nomeProduto": "Máquina de Lavar Consul",
-      "preco": 2600,
-      "categoria": "Eletrodomésticos",
-      "quantidade": 7,
-      "id": 11
-    },
-    {
-      "nomeProduto": "Maquina de Lavar Brastemp",
-      "preco": 5000,
-      "categoria": "Eletrodomésticos",
-      "quantidade": 1,
-      "id": 12
-    },
-    {
-      "nomeProduto": "Nintendo Switch Oled",
-      "preco": 2300,
-      "categoria": "Video Games",
-      "quantidade": 9,
-      "id": 13
-    },
-    {
-      "nomeProduto": "Celular Samsung Galaxy FE",
-      "preco": 2500,
-      "categoria": "Celulares",
-      "quantidade": 6,
-      "id": 14
+      "id": 4
     }
   ]
 }

@@ -10,12 +10,14 @@ h5 {
 tr {
 
     font-family: 'Orbitron', sans-serif;
-    color: rgb(233, 159, 22)
+    color: rgb(233, 159, 22);
+    text-align: center;
 }
 
 td {
 
-    color: rgb(119, 117, 112)
+    color: rgb(119, 117, 112);
+    text-align: center;
 
 }
 
