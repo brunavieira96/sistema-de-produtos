@@ -83,6 +83,20 @@
       "categoria": "Eletrodomésticos",
       "quantidade": 1,
       "id": 12
+    },
+    {
+      "nomeProduto": "Nintendo Switch Oled",
+      "preco": 2300,
+      "categoria": "Video Games",
+      "quantidade": 9,
+      "id": 13
+    },
+    {
+      "nomeProduto": "Celular Samsung Galaxy FE",
+      "preco": 2500,
+      "categoria": "Celulares",
+      "quantidade": 6,
+      "id": 14
     }
   ]
 }
