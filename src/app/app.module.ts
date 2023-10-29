@@ -18,7 +18,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ProdutosComponent,
     CadastroComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+   
   ],
   imports: [
     BrowserModule,

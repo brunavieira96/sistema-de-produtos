@@ -5,6 +5,7 @@
   <thead>
     <tr>
       
+      <th scope="col">ID</th>
       <th scope="col">Nome</th>
       <th scope="col">Código de Barras</th>
       <th scope="col">Preço</th>
@@ -15,12 +16,13 @@
 <tbody>
   <tr *ngFor="let produto of produtos">
     
+    <td>{{ produto.id }}</td>
     <td>{{ produto.nome }}</td>
     <td>{{ produto.codigoBarras }}</td>
     <td>{{ produto.preco }}</td>
     <td>{{ produto.acoes }}<button class="btn btn-light mr-4" style="width: 40px;">
       <img class="icone" src="assets/pencil.svg " style="width: 20px;"/></button>
-      <button class="btn btn-light" style="width: 40px;">
+      <button class="btn btn-light" style="width: 40px;" (click)="remover(produto.id!)">
         <img class="icone" src="assets/trash3.svg" style="width: 20px;"/></button>
     
     
