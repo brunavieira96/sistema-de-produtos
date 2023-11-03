@@ -1,16 +1,7 @@
 {
   "produtos": [
     {
-      "nome": "Nintendo Switch",
-      "codigoBarras": "A786HUI",
-      "preco": 2300,
-      "id": 2
-    },
-    {
-      "nome": "TV Samsung 42'",
-      "codigoBarras": "I89H7J",
-      "preco": 1700,
-      "id": 7
+      "id": 1
     }
   ]
 }

@@ -1,9 +1,13 @@
-import { Component } from '@angular/core';
+
+import { Component, OnInit } from '@angular/core';
 import { Produto } from '../../interfaces/produto';
 import { ProdutosService } from 'src/app/services/produtos.service';
 import { HttpClient } from '@angular/common/http';
 import Swal from 'sweetalert2';
-import { Router, ActivatedRoute } from '@angular/router'
+import { Router, ActivatedRoute} from '@angular/router'
+import { AppComponent } from 'src/app/app.component';
+import { Observable } from 'rxjs';
+
 
 
 
@@ -12,18 +16,26 @@ import { Router, ActivatedRoute } from '@angular/router'
   templateUrl: './produtos.component.html',
   styleUrls: ['./produtos.component.css']
 })
-export class ProdutosComponent {
-  
+export class ProdutosComponent  {
+
+
+
   produtos: Produto[] = [];
 
-  constructor (private produtosService : ProdutosService) {
+
+
+  constructor (public produtosService : ProdutosService, _router : Router, _activatedRoute : ActivatedRoute,
+    _appComponent : AppComponent) {
+
+
 
   }
-  
-  
- 
 
-  ngOnInit() {
+
+
+
+  ngOnInit(): void {
+
 
     this.produtosService.exibeProdutos().subscribe(
       (produtos) => {
@@ -33,45 +45,37 @@ export class ProdutosComponent {
         console.log(error);
 
       }
-    )     
+    )
+
+
+
+
   }
 
-  async remover(id: number) {
+   remover(id: any) {
 
-    await this.produtosService.removerPodutos(id).subscribe(
-      (result) => {
-        Swal.fire({
-        
-          icon: 'success',
-          title: 'O Produto foi Excluido!',
-          showConfirmButton: false,
-          timer: 1500
-      });
-      },
-      (error) => {
-        const { message } = error;
-        Swal.fire('Parece que Houve um Erro Para Excluir', message, 'error');
-      }
+     this.produtosService.removerProdutos(id).subscribe( (resultado) => {
+      Swal.fire({
 
-     
-      
-    );
+        icon: 'success',
+        title: 'O Produto foi Excluído!',
+        showConfirmButton: false,
+        timer: 1500
+    });
+
+      this.ngOnInit();
+
+     }
 
 
-  
 
-  /*remover(id: number) {
-    this.produtosService.removerProdutos(id).subscribe({
+      );
 
-      
-    }); */
-  }
 
 }
-  
 
 
-
+  }
 
 
 
