@@ -2,9 +2,13 @@
 
 Esse projeto foi gerado pelo [Angular CLI](https://github.com/angular/angular-cli) version 16.2.7
 
-##📖 Documentação~
+
+
+##📖 Documentação:
 
 - O projeto Sistema de Produtos consiste em um CRUD com Angular.
+
+
 
 ## 💻 Resumos das Telas
 
@@ -13,6 +17,7 @@ Esse projeto foi gerado pelo [Angular CLI](https://github.com/angular/angular-cl
 | Home |  Tela de Início |
 |Exibição de Produtos | Podemos Editar e Excluir Produtos|
 |Cadastro de Produtos | Cadastrar Produtos|
+
 
 
 ## 📌 Servidor
