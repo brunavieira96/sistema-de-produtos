@@ -7,6 +7,7 @@ import Swal from 'sweetalert2';
 import { Router, ActivatedRoute} from '@angular/router'
 import { AppComponent } from 'src/app/app.component';
 import { Observable } from 'rxjs';
+import localePt from '@angular/common/locales/pt'
 
 
 

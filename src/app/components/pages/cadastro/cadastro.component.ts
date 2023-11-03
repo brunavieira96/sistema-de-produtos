@@ -19,8 +19,8 @@ export class CadastroComponent {
   }
 
     produtoForm = new FormGroup({
-    nome: new FormControl('', Validators.required),
-    codigoBarras: new FormControl('', Validators.required),
+    nome: new FormControl('', [Validators.maxLength(20)]),
+    codigoBarras: new FormControl('', [Validators.maxLength(10)]),
     preco: new FormControl(),
 
   })
@@ -31,7 +31,7 @@ export class CadastroComponent {
     this.produtosService.cadastroProdutos(produto).subscribe(
       (result) => {
         Swal.fire({
-        
+
           icon: 'success',
           title: 'O Produto foi Salvo!',
           showConfirmButton: false,
@@ -45,7 +45,7 @@ export class CadastroComponent {
     );
   }
 
-    
+
   }
 
 

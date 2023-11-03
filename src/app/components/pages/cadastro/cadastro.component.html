@@ -8,6 +8,9 @@
       <label for="nome">Nome</label>
       <input type="text" class="form-control" id="nome"
         formControlName="nome">
+        <span *ngIf="produtoForm.controls.nome.errors">
+          O campo deve ter até 20 caracteres
+        </span>
     </div>
 
 
@@ -15,18 +18,24 @@
         <label for="codigoBarras">Código de Barras</label>
         <input type="text" class="form-control" id="codigoBarras"
           formControlName="codigoBarras">
+          <span *ngIf="produtoForm.controls.codigoBarras.errors">
+            O campo deve ter até 20 caracteres
+          </span>
       </div>
 
-      
+
       <div class="form-group">
         <label for="preco">Preço</label>
         <input type="number" class="form-control" id="preco"
-          formControlName="preco">
+          formControlName="preco" formControlName="preco" oninput="javascript: if (this.value.length > this.maxLength)
+          this.value = this.value.slice(0, this.maxLength)"
+          type = "number"
+          maxlength = "11">
       </div>
-    
+
       <button class="btn btn-primary mr-2 mt-3" type="submit" [disabled]="produtoForm.invalid">Enviar</button>
       <button class="btn btn-danger mt-3" routerLink="/produtos">Voltar</button>
-      
-      
-    
+
+
+
   </form>

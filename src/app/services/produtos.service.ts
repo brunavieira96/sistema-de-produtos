@@ -7,6 +7,7 @@ import { Router } from '@angular/router';
 import { ActivatedRoute } from '@angular/router';
 import { AppComponent } from '../app.component';
 
+
 @Injectable({
   providedIn: 'root'
 })
@@ -42,8 +43,8 @@ export class ProdutosService {
     return this.http.get(`${this.api}/${id}`);
    }
 
-   atualizarProdutoDaLista(id : number, ) {
-    return this.http.put(`${this.api}/${id}`, id);
+   atualizarProdutoDaLista(id: number, produtoFormEditar : any) {
+    return this.http.put(`${this.api}/${id}`, produtoFormEditar);
    }
 
 

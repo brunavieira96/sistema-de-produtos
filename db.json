@@ -1,7 +1,16 @@
 {
   "produtos": [
     {
+      "nome": "IPhone 14",
+      "codigoBarras": "R5T789",
+      "preco": 40000,
       "id": 1
+    },
+    {
+      "nome": "Samsung Galaxy FE 5G",
+      "codigoBarras": "R5T789",
+      "preco": 2500,
+      "id": 2
     }
   ]
 }

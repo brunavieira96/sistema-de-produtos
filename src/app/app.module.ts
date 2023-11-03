@@ -11,6 +11,10 @@ import { HttpClientModule} from '@angular/common/http'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
 import { EditarComponent } from './components/editar/editar.component';
+import { LOCALE_ID, DEFAULT_CURRENCY_CODE } from '@angular/core';
+import localePt from '@angular/common/locales/pt';
+
+
 
 
 
@@ -24,6 +28,7 @@ import { EditarComponent } from './components/editar/editar.component';
     HeaderComponent,
     FooterComponent,
     EditarComponent,
+
 
 
   ],
@@ -44,8 +49,12 @@ import { EditarComponent } from './components/editar/editar.component';
 
 
   ],
-  providers: [],
+  providers: [
+
+  ],
   bootstrap: [AppComponent]
+
+
 })
 export class AppModule { }
 
