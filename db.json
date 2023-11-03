@@ -11,6 +11,12 @@
       "codigoBarras": "R5T789",
       "preco": 2500,
       "id": 2
+    },
+    {
+      "nome": "Nintendo Switch Lite",
+      "codigoBarras": "H78K095",
+      "preco": 1300,
+      "id": 3
     }
   ]
 }

@@ -17,6 +17,7 @@ import localePt from '@angular/common/locales/pt'
   templateUrl: './produtos.component.html',
   styleUrls: ['./produtos.component.css']
 })
+
 export class ProdutosComponent  {
 
 

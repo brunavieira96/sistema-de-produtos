@@ -48,7 +48,7 @@ export class EditarComponent implements OnInit {
         Swal.fire({
 
           icon: 'success',
-          title: 'O Produto foi Salvo!',
+          title: 'O Produto foi Editado!',
           showConfirmButton: false,
           timer: 1500
       });

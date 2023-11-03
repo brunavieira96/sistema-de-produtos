@@ -11,9 +11,11 @@ import { HttpClientModule} from '@angular/common/http'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
 import { EditarComponent } from './components/editar/editar.component';
-import { LOCALE_ID, DEFAULT_CURRENCY_CODE } from '@angular/core';
-import localePt from '@angular/common/locales/pt';
+import { registerLocaleData } from '@angular/common';
+import { DEFAULT_CURRENCY_CODE, LOCALE_ID } from '@angular/core';
+import ptBr from '@angular/common/locales/pt';
 
+registerLocaleData(ptBr);
 
 
 
@@ -50,6 +52,15 @@ import localePt from '@angular/common/locales/pt';
 
   ],
   providers: [
+
+    {
+      provide: LOCALE_ID,
+      useValue: 'pt',
+      },
+      {
+      provide: DEFAULT_CURRENCY_CODE,
+      useValue: 'BRL',
+      },
 
   ],
   bootstrap: [AppComponent]
